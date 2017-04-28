@@ -7,10 +7,6 @@
 <title>HOME</title>
 </head>
 <body>
-<form action="name_id" method="post">
-<input type="text" name="fname"/>
-<input type="submit" value="ok" />
-</form>
 <table></table>
 </body>
 </html>

@@ -24,7 +24,6 @@ public class UserPerananController {
 	@RequestMapping(value = "/user", method = RequestMethod.GET)
     public String list(Model model) {
         model.addAttribute("user", userPerananService.listAllUserPeranan());
-        System.out.println("Returning rpoducts:");
         return "user";
     }
 	
