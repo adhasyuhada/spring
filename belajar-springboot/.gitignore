@@ -1,0 +1,10 @@
+#ignore file #
+.class
+.classpath
+.settings
+
+
+#ignore folder #
+target
+build
+bin
