@@ -1,8 +1,14 @@
+# file config ignore #
+.classpath
 .class
 .project
+
+# folder ignore #
 target
 bin
 build
+
+# Package ignore #
 *.jar
 *.war
 *.ear
