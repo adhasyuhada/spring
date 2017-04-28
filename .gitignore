@@ -1,6 +1,8 @@
 .class
 .project
 target
+bin
+build
 *.jar
 *.war
 *.ear
