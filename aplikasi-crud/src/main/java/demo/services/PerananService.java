@@ -1,6 +1,6 @@
 package demo.services;
 
-import demo.model.Peranan;
+import demo.entities.Peranan;
 
 public interface PerananService{
 	

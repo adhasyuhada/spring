@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import demo.model.Peranan;
-import demo.model.UserPeranan;
+import demo.entities.Peranan;
+import demo.entities.UserPeranan;
 import demo.services.UserPerananService;
 
 @Controller

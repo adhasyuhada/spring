@@ -1,6 +1,6 @@
 package demo.services;
 
-import demo.model.UserPeranan;
+import demo.entities.UserPeranan;
 
 public interface UserPerananService {
 	Iterable<UserPeranan> listAllUserPeranan();

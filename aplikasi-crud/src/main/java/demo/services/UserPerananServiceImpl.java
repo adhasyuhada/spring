@@ -2,8 +2,8 @@ package demo.services;
 
 import org.springframework.beans.factory.annotation.Autowired;
 
-import demo.model.UserPeranan;
-import demo.repositories.UserPerananRepositories;
+import demo.dao.UserPerananRepositories;
+import demo.entities.UserPeranan;
 
 public class UserPerananServiceImpl implements UserPerananService{
 	
