@@ -12,28 +12,27 @@
 </head>
 <body>
 	<h1>Edit Account</h1>
-	<form:form method="post" name="peranan" action="${pageContect.request.contextPath}/peranan/edit">
+	<form:form modelAttribute="peranan" method="post" name="peranan" action="${pageContect.request.contextPath}/peranan/edit">
 		<table>
+		<form:hidden path="id"/>
 			<tr>
 				<td>Username :</td>
-				<td><input type="text" name="username" /></td>
+				<td><form:input path="username" value="${peranan.username}" /></td>
 			</tr>
 
 			<tr>
 				<td>peran :</td>
-				<td><input type="text" name="peran" /></td>
+				<td><form:input path="peran" value="${peranan.peran}" /></td>
 			</tr>
 			
  			<tr>
 				<td>Description :</td>
-				<td><input type="text" name="description" /></td>
+				<td><form:input path="description" value="${peranan.description}" /></td>
 			</tr>
 
 			<tr>
-				<td>&nbsp;</td>
 				<td>
 					<input type="submit" value="Edit Save" />
-					<input type="hidden" name="id" />
 				</td>
 
 			</tr>  
