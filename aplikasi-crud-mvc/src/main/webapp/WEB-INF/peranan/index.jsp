@@ -12,6 +12,10 @@
 </head>
 <body>
 <h1>List Peranan</h1>
+<button><a href="peranan/add">Tambah Peran</a></button>
+<button><a href="peranan/report">Cetak List</a></button>
+<br/>
+<br/>
 	<table border="2" width="70%" cellpadding="2">
 	<tr>
 		<th>Id </th>
@@ -33,6 +37,6 @@
     </c:forEach>
     </table>
     <br/>
-    <a href="peranan/add">Add New Account</a>
+    
 </body>
 </html>

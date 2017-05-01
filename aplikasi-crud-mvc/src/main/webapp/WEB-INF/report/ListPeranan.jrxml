@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
-<!-- 2017-05-01T03:08:15 -->
+<!-- 2017-05-01T13:20:55 -->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ListPeranan" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="53a3cbf6-2b61-4caa-9ceb-a81a68cb2de5">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="MySQL - JDBC Driver"/>
@@ -16,21 +16,13 @@
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="60" splitType="Stretch">
+		<band height="63" splitType="Stretch">
 			<staticText>
 				<reportElement x="216" y="7" width="129" height="30" uuid="9e7d84e4-9993-4c17-b477-e71c5a1d561d"/>
 				<textElement textAlignment="Center">
 					<font size="12" isBold="true"/>
 				</textElement>
 				<text><![CDATA[LIST PERANAN]]></text>
-			</staticText>
-			<textField pattern="MM/dd/yyyy h:mm a">
-				<reportElement x="409" y="24" width="130" height="30" uuid="207c4c6e-ec8b-4526-b57b-d130a4f4a3ed"/>
-				<textFieldExpression><![CDATA[$P{CurrentDate}]]></textFieldExpression>
-			</textField>
-			<staticText>
-				<reportElement x="426" y="10" width="91" height="19" uuid="6f39bc4d-287a-48b2-adf3-b04c6b56292a"/>
-				<text><![CDATA[Current Date]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -68,7 +60,7 @@
 				<text><![CDATA[DESCRIPTION]]></text>
 			</staticText>
 			<line>
-				<reportElement x="-1" y="48" width="561" height="5" uuid="c513041d-c798-4e58-bb39-36587abdccf6"/>
+				<reportElement x="-1" y="48" width="556" height="1" uuid="c513041d-c798-4e58-bb39-36587abdccf6"/>
 			</line>
 		</band>
 	</columnHeader>
@@ -91,7 +83,7 @@
 				<textFieldExpression><![CDATA[$F{description}]]></textFieldExpression>
 			</textField>
 			<line>
-				<reportElement x="0" y="55" width="561" height="5" uuid="235a03c5-2416-40e3-8e68-7935001e0331"/>
+				<reportElement x="0" y="55" width="555" height="1" uuid="235a03c5-2416-40e3-8e68-7935001e0331"/>
 			</line>
 		</band>
 	</detail>
@@ -104,17 +96,9 @@
 				<reportElement x="310" y="-6" width="80" height="30" uuid="ef146cc8-6a8e-464b-a638-602d4a02bdbe"/>
 				<textFieldExpression><![CDATA[$V{PAGE_NUMBER}]]></textFieldExpression>
 			</textField>
-			<textField>
-				<reportElement x="459" y="-5" width="80" height="30" uuid="e2d44954-c293-452e-b5c8-215159346a73"/>
-				<textFieldExpression><![CDATA[$V{PAGE_COUNT}]]></textFieldExpression>
-			</textField>
 			<staticText>
 				<reportElement x="230" y="-3" width="70" height="18" uuid="81ef038a-4528-4228-8b0f-51ce76e8cc4e"/>
 				<text><![CDATA[Halaman ke :]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="399" y="-4" width="44" height="30" uuid="c21d7c7c-28e6-4e2a-a23a-61958191ac83"/>
-				<text><![CDATA[dari]]></text>
 			</staticText>
 		</band>
 	</pageFooter>

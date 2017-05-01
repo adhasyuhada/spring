@@ -1,5 +1,6 @@
 package com.codein.controller;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -14,7 +15,7 @@ import com.codein.service.PerananService;
 @Controller
 @RequestMapping("peranan")
 public class PerananController {
-	
+			
 	@Autowired
 	private PerananService perananService;
 	
@@ -75,4 +76,28 @@ public class PerananController {
 		perananService.save(currentAccount);
 		return "redirect:../peranan";
 	}
+	
+	@RequestMapping("report")
+	public String report(){
+		return "report/ListPeranan";
+	}
+	
+	/*
+	 * Jasper report 	 
+	
+	@RequestMapping(value = "report", params = {"format"}, method = RequestMethod.GET)
+    public String report(@RequestParam("format") String format, @RequestParam(value = "status", required = false, defaultValue = "true") Boolean status, ModelMap modelMap) {
+        modelMap.addAttribute("datasource", perananService.findAll());
+        modelMap.addAttribute("show", status);
+
+        if (format.equalsIgnoreCase("pdf")) {
+            return "perananPdfReport";
+        } else if (format.equalsIgnoreCase("xls")) {
+            return "perananXlsReport";
+        } else if (format.equalsIgnoreCase("csv")) {
+            return "perananCsvReport";
+        } else {
+            return "perananHtmlReport";
+        }
+    }*/
 }

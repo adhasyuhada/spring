@@ -14,7 +14,6 @@ import org.springframework.web.servlet.DispatcherServlet;
 
 @SpringBootApplication
 //@Configuration
-//@ComponentScan
 //@EnableAutoConfiguration
 public class AplikasiCrudMvcApplication extends SpringBootServletInitializer{
 	@Override

@@ -16,18 +16,22 @@
 	action="${pageContect.request.contextPath}/peranan/add">
 	<table>
 		<tr>
-			<td>Username :</td>
+			<td>Username</td>
+			<td>:</td>
 			<td><form:input path="username" value="${peranan.username}" /></td>
 		</tr>
 
 		<tr>
-			<td>Peran :</td>
+			<td>Peran</td>
+			<td>:</td>
 			<td><form:input path="peran" value="${peranan.peran}" /></td>
 		</tr>
 
 		<tr>
-			<td>Description :</td>
-			<td><form:input path="description" value="${peranan.description}" /></td>
+			<td>Description</td>
+			<td>:</td>
+<%-- 			<td><form:input path="description" value="${peranan.description}" /></td> --%>
+			<td><form:textarea path="description" rows="5" cols="30" value="${peranan.description}"/></td>
 		</tr>
 		<tr>
 			<td></td>
